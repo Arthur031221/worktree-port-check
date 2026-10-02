@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-labelledby="title">
+  <title id="title">Two checkout paths meeting at one port</title>
+  <path d="M17 15v20c0 7 5 12 12 12h14c7 0 12 4 12 10" fill="none" stroke="#1D3038" stroke-width="6" stroke-linecap="round"/>
+  <path d="M17 15v12c0 7 5 12 12 12h14c7 0 12-4 12-11V15" fill="none" stroke="#2A6674" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="17" cy="15" r="6" fill="#2A6674"/>
+  <circle cx="55" cy="15" r="6" fill="#1D3038"/>
+  <circle cx="55" cy="57" r="6" fill="#2A6674"/>
+</svg>

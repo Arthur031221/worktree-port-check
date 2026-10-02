@@ -1,0 +1,16 @@
+{
+  "name": "worktree-port-check",
+  "version": "1.0.0",
+  "description": "Check whether a TCP listener runs from the Git worktree you are testing",
+  "type": "module",
+  "bin": {
+    "worktree-port-check": "./bin-worktree-port-check.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}

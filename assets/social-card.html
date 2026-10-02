@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>worktree-port-check</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 675px;
+    margin: 0;
+    padding: 66px 74px;
+    background: #edf3f5;
+    color: #1d3038;
+    font-family: "Noto Sans", "Arial", sans-serif;
+  }
+  .layout { display: grid; grid-template-columns: 1fr 0.92fr; gap: 52px; align-items: center; height: 100%; }
+  .mark { width: 58px; height: 58px; margin-bottom: 30px; }
+  h1 { margin: 0 0 20px; font-size: 58px; line-height: 1.03; letter-spacing: -2px; }
+  .tagline { max-width: 500px; margin: 0; color: #637881; font-size: 24px; line-height: 1.42; }
+  .meta { margin-top: 38px; color: #2a6674; font: 700 16px/1.5 "Noto Sans", "Arial", sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+  .terminal { overflow: hidden; border: 1px solid #c7d3d7; border-radius: 13px; background: #fff; box-shadow: 0 18px 48px rgba(29, 48, 56, .12); }
+  .bar { padding: 16px 20px; border-bottom: 1px solid #dbe4e7; color: #637881; font: 600 14px "Noto Sans", "Arial", sans-serif; }
+  pre { margin: 0; padding: 24px 23px 27px; color: #1d3038; font: 17px/1.7 "DejaVu Sans Mono", monospace; }
+  .muted { color: #637881; }
+  .accent { color: #2a6674; }
+  .warning { color: #9a561c; font-weight: 700; }
+  .rule { height: 5px; width: 92px; margin-top: 30px; background: #b66d2b; }
+</style>
+</head>
+<body>
+  <main class="layout">
+    <section>
+      <svg class="mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" aria-hidden="true">
+        <path d="M17 15v20c0 7 5 12 12 12h14c7 0 12 4 12 10" fill="none" stroke="#1D3038" stroke-width="6" stroke-linecap="round"/>
+        <path d="M17 15v12c0 7 5 12 12 12h14c7 0 12-4 12-11V15" fill="none" stroke="#2A6674" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="17" cy="15" r="6" fill="#2A6674"/>
+        <circle cx="55" cy="15" r="6" fill="#1D3038"/>
+        <circle cx="55" cy="57" r="6" fill="#2A6674"/>
+      </svg>
+      <h1>worktree-port-check</h1>
+      <p class="tagline">Check which Git worktree the listener process is running from.</p>
+      <div class="rule"></div>
+      <p class="meta">Node.js CLI / macOS and Linux</p>
+    </section>
+    <section class="terminal">
+      <div class="bar">EXAMPLE / TCP 3000</div>
+      <pre><span class="muted">$</span> worktree-port-check 3000
+
+Checkout   <span class="accent">main</span>
+Listener   node
+Process cwd /apps/project-preview
+Git branch <span class="accent">preview</span>
+
+Result     <span class="warning">OTHER_WORKTREE</span></pre>
+    </section>
+  </main>
+</body>
+</html>
